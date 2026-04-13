@@ -10,7 +10,7 @@ load_dotenv()
 # Database configuration
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "mysql+pymysql://root:@localhost/auth_db"
+    "sqlite:///./auth.db"
 )
 
 # Create SQLAlchemy engine with production settings
